@@ -312,7 +312,7 @@ SnapTranslator.dict.ja_HIRA = {
     'change y by %n':
         'yざひょうを %n ずつかえる',
     'set y to %n':
-        'ざひょうを %n にする',
+        'yざひょうを %n にする',
     'if on edge, bounce':
         'もしはしについたら、はねかえる',
     'x position':
@@ -380,6 +380,8 @@ SnapTranslator.dict.ja_HIRA = {
         '%n はくやすむ',
     'play note %n for %n beats':
         '%n のおんぷを %n はくならす',
+    'set instrument to %n':
+        'がっきを %n にする',
     'change tempo by %n':
         'テンポを %n ずつかえる',
     'set tempo to %n bpm':
@@ -1037,9 +1039,9 @@ SnapTranslator.dict.ja_HIRA = {
     '(-90) left':
         '(-90) ひだり',
     '(0) up':
-        '(0) じょう',
+        '(0) うえ',
     '(180) down':
-        '(180) か',
+        '(180) した',
 
     // collision detection
     'mouse-pointer':

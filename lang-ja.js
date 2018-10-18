@@ -312,7 +312,7 @@ SnapTranslator.dict.ja = {
     'change y by %n':
         'y座標を %n ずつ変える',
     'set y to %n':
-        '座標を %n にする',
+        'y座標を %n にする',
     'if on edge, bounce':
         'もし端に着いたら、跳ね返る',
     'x position':
@@ -378,8 +378,10 @@ SnapTranslator.dict.ja = {
         'すべての音を止める',
     'rest for %n beats':
         '%n 拍休む',
-    'play note %n for %n beats':
-        '%n の音符を %n 拍鳴らす',
+    'play note %note for %n beats':
+        '%note の音符を %n 拍鳴らす',
+    'set instrument to %inst':
+        '楽器を %inst にする',
     'change tempo by %n':
         'テンポを %n ずつ変える',
     'set tempo to %n bpm':
@@ -535,8 +537,8 @@ SnapTranslator.dict.ja = {
         'ハロー',
     'world':
         'ワールド',
-    'letter %idx of %s':
-        '%idx 文字目の文字 %s',
+    'letter %n of %s':
+        '%n 文字目の文字 %s',
     'length of %s':
         '%s の長さ',
     'unicode of %s':
@@ -570,29 +572,29 @@ SnapTranslator.dict.ja = {
     'script variables %scriptVars':
         'スクリプト変数 %scriptVars',
 
-    // lists:
-    'list %exp':
-        'リスト %exp',
-    '%s in front of %l':
-        '%s を %l の先頭に置く',
-    'item %idx of %l':
-        '%idx 番目 %l',
-    'all but first of %l':
-        '%l の先頭以外',
-    'length of %l':
-        '%l の長さ',
-    '%l contains %s':
-        '%l に %s が含まれているか',
-    'thing':
-        'なにか',
-    'add %s to %l':
-        '%s を %l に追加する',
-    'delete %ida of %l':
-        '%ida を %l から削除する',
-    'insert %s at %idx of %l':
-        '%s を %idx 番目に挿入する %l',
-    'replace item %idx of %l with %s':
-        '%idx 番目 %l を %s で置き換える',
+	// lists:
+	'list %exp':
+		'リスト %exp',
+	'%s in front of %l':
+		'%s を %l の先頭に置く',
+	'item %idx of %l':
+		'%idx 番目 %l',
+	'all but first of %l':
+		'%l の先頭以外',
+	'length of %l':
+		'%l の長さ',
+	'%l contains %s':
+		'%l に %s が含まれているか',
+	'thing':
+		'なにか',
+	'add %s to %l':
+		'%s を %l に追加する',
+	'delete %ida of %l':
+		'%ida 番目を %l から削除する',
+	'insert %s at %idx of %l':
+		'%s を %idx 番目 %l に挿入する',
+	'replace item %idx of %l with %s':
+		'%idx 番目 %l を %s で置き換える',
 
     // other
     'Make a block':
@@ -628,10 +630,10 @@ SnapTranslator.dict.ja = {
         '名前をつけて保存...',
     'Import...':
         '読み込み...',
-    'file menu import hint':
-        'チェックするとレポーターをドラッグ&ドロップするとき\n'
-		+ '空のレポーターにフォーカスします\n\n'
-		+ 'いくつかのブラウザーではサポートされません',
+//    'file menu import hint':
+//        'チェックするとレポーターをドラッグ&ドロップするとき\n'
+//		+ '空のレポーターにフォーカスします\n'
+//		+ 'いくつかのブラウザーではサポートされません',
     'Export project as plain text...':
         'テキストファイルとしてプロジェクトを書き出す...',
     'Export project...':
@@ -924,7 +926,7 @@ SnapTranslator.dict.ja = {
     'Command':
         'コマンド',
     'Reporter':
-        'モニター',
+        'レポーター',
     'Predicate':
         '述語',
 
@@ -1178,6 +1180,8 @@ SnapTranslator.dict.ja = {
         '真偽値',
     'list':
         'リスト',
+	'sprite':
+		'スプライト',
     'command':
         'コマンド',
     'reporter':
@@ -1190,6 +1194,7 @@ SnapTranslator.dict.ja = {
         '最後',
     'any':
         '任意',
+
 
     // missing entries
     'Reference manual':
@@ -1204,13 +1209,11 @@ SnapTranslator.dict.ja = {
         'ログアウトするまでこのコンピューターに\nサインインしたままにする',
     'Sign up':
         'サインアップ',
-    'User name:':
-        'ユーザー名:',
-    'Password:':
-        'パスワード:',
     'Birth date:':
         '誕生月:',
-    'Birth date:':
+	'Birth date:':
+		'年:',
+    'year:':
         '年:',
     'January':
         '1月',
@@ -1246,5 +1249,484 @@ SnapTranslator.dict.ja = {
         '個人情報...',
     'I have read and agree\nto the Terms of Service':
         'サービス利用規約を読み\nそれに同意します',
+
+	//missing entries2
+	//GUI
+	// new sprite button:
+	'add a new Turtle sprite':
+	'新しいスプライトを追加する',
+	'paint a new sprite':
+		'新しいスプライトをペイントで作る',
+	'Paint a new costume':
+		'新しいコスチュームをペイントで作る',
+
+
+	// sensing
+	'%att of %spr':
+	'%att ( %spr の)',
+	'my %get':
+	'自分 %get',
+
+    'current %dates':
+        '今は %dates',
+    'year':
+        '何年',
+    'month':
+        '何月',
+    'date':
+        '何日',
+    'day of week':
+        '何曜日',
+    'hour':
+        '何時',
+    'minute':
+        '何分',
+    'second':
+        '何秒',
+    'time in milliseconds':
+        '現在時刻 (ミリセカンド)',
+
+	// project menu
+	'save project data as XML\nto your downloads folder':
+		'プロジェクトのデータをXMLで\nダウンロードフォルダに保存する',
+	'Export summary...':
+        '要約を書き出す...',
+	'open a new browser browser window\n with a summary of this project':
+		'このプロジェクトの要約を\n新しいブラウザーウインドウで開く',
+	'Libraries...':
+        'ライブラリー...',
+	'Select categories of additional blocks to add to this project.':
+		'このプロジェクトに付け加える追加の\nブロックのカテゴリーを選択',
+
+	'(in a new window)':
+		'(新しいウインドウで)',
+	'file menu import hint':
+		'書き出したプロジェクトファイル，\nブロックライブラリー，コスチュームや\n音を読み込む',
+	'Export summary with drop-shadows...':
+		'ドロップシャドウ付きで要約を書き出す...',
+	'open a new browser browser window\nwith a summary of this project\nwith drop-shadows on all pictures.\nnot supported by all browsers':
+		'このプロジェクトの要約を\nすべての画像にドロップシャドウ\nを付けて新しいウインドウで書き出す\nすべてのブラウザーで機能するわけではない',
+	'Export all scripts as pic...':
+		'すべてのスクリプトを画像で書き出す...',
+	'show a picture of all scripts\nand block definitions':
+		'すべてのスクリプトとブロック定義を1つの画像として表示する',
+	'Select a sound from the media library':
+		'メディアライブラリーから音を選ぶ',	
+	'Select a costume from the media library':
+		'メディアライブラリーからコスチュームを選ぶ',
+
+	'Unused blocks...':
+		'未使用のブロック...',
+	'find unused global custom blocks\nand remove their definitions':
+		'未使用のグローバルカスタムブロックを\n見つけてその定義を削除する',
+	'Remove unused blocks':
+		'未使用のブロックを削除する',
+
+
+
+
+	// cloud menu
+	'Logout':
+	'ログアウト ',
+	'Change Password...':
+	'パスワードの変更...',
+	'Reset Password...':
+		'パスワードをリセット',
+	'export project media only...':
+		'プロジェクトをメディアのみ書き出す...',
+	'export project without media...':
+		'プロジェクトをメディアなしで書き出す...',
+	'export project as cloud data...':
+		'プロジェクトをクラウドデータとして書き出す...',
+	'open shared project from cloud...':
+		'クラウドから共有プロジェクトを開く...',
+	'url...':
+		'URL...',
+
+
+	// setting menu
+    'Stage size...':
+        'ステージの大きさ...',
+    'Stage size':
+        'ステージの大きさ',
+    'Stage width':
+        '幅',
+    'Stage height':
+        '高さ',
+    'Default':
+        '初期値に戻す',
+	'Dragging threshold...':
+		'ドラッグのしきい値…',
+	'specify the distance the hand has to move\nbefore it picks up an object':
+		'オブジェクトをつかんだときに\nオブジェクトが動きだすまでの\n距離を指定する',
+
+    'Plain prototype labels':
+        'ブロック定義のラベルを単純にする',
+    'uncheck to always show (+) symbols\nin block prototype labels':
+        'チェックを外すと（ブロックエディターで）\nブロック定義のラベルに(+)記号を常に出す',
+    'check to hide (+) symbols\nin block prototype labels':
+        'チェックを付けると（ブロックエディターで）\nブロック定義のラベルから(+)記号を隠す',
+    'Flat design':
+        'フラットなユーザインターフェース',
+	'uncheck for default\nGUI design':
+		'チェックを外すと標準の\nユーザインターフェースデザインに戻す',
+	'check for alternative\nGUI design':
+		'チェックを付けるとフラットな\nユーザインターフェースデザインにする',
+	'Nested auto-wrapping':
+        'オートラッピング機能',
+	'uncheck to confine auto-wrapping\nto top-level block stacks':
+		'チェックを外すとオートラッピングは\n一番外側のブロックに対してのみ有効になる',
+	'check to enable auto-wrapping\ninside nested block stacks':
+		'チェックを付けると内部のブロックに対しても\nオートラッピングが有効になる',
+    'Keyboard Editing':
+        'キーボード編集',
+    'uncheck to disable\nkeyboard editing support':
+        'チェックを外すと\nキーボード編集機能が無効になる',
+    'check to enable\nkeyboard editing support':
+        'チェックを付けると\nキーボード編集機能が有効になる',
+    'Table support':
+        '表形式のリスト表示',
+    'check for multi-column\nlist view support':
+        'チェックを付けるとリスト表示で\n表形式の表示が可能になる',
+    'uncheck to disable\nmulti-column list views':
+	'チェックを外すとリスト表示で\n表形式の表示ができなくなる',
+    'Table lines':
+        '表の枠線',
+    'check for higher contrast\ntable views':
+        'チェックを付けると表形式の表示で\nコントラスト強くするため表に枠線をつける',
+    'uncheck for less contrast\nmulti-column list views':
+        'チェックをはずすと表形式の表示で\nコントラストを弱めるため表から枠線をはずす',
+    'Visible stepping':
+        '可視化されたステップ実行',
+	'check to turn on\n visible stepping (slow)':
+		'チェックを付けると可視化されたステップ実行を行う (遅い)',
+	'uncheck to turn off\nvisible stepping':
+		'チェックを外すと可視化されたステップ実行をやめる',
+    'Flat line ends':
+        '線端の形状',
+    'check for flat ends of lines':
+        'チェックを付けるとペンで描く\n線の端が平坦になる',
+    'uncheck for round ends of lines':
+	'チェックを外すとペンで描く\n線の端が丸くなる',
+	'Codification support':
+		'コードのテキスト化',
+	'check for block\nto text mapping features':
+		'チェックを付けるとブロックを\nテキスト化する機能が有効になる',
+	'uncheck to disable\nblock to text mapping features':
+	'チェックを外すとブロックを\nテキスト化する機能が無効になる',
+    'Inheritance support':
+        '継承',
+    'uncheck to disable\nsprite inheritance features':
+        'チェックを外すとスプライトの\n継承機能が無効になる',
+    'check for sprite\ninheritance features':
+	'チェックを付けるとスプライトの\n継承機能が有効になる',
+	'Cache Inputs':
+		'入力のキャッシュ',
+	'uncheck to stop caching\ninputs (for debugging the evaluator)':
+	'チェックを外すと(エバリュエータの\nデバッグ用に)入力のキャッシュを\n止めます',
+	'check to cache inputs\nboosts recursion':
+		'チェックを付けると入力を\n再帰的にキャッシュする',
+	'Rasterize SVGs':
+		'SVGをラスター形式に変換',
+	'check to rasterize\nSVGs on import':
+		'チェックを付けるとSVGを\nラスター形式に変換して読み込む',
+	'uncheck for smooth\nscaling of vector costumes':
+		'チェックを外すとSVGを\nなめらかなベクター形式で読み込む',
+	'First-Class Sprites':
+	'第１級のスプライト',
+	'uncheck to disable support\nfor first-class sprites':
+	'チェックを外すとスプライトを\n第1級の対象として扱う機能は無効になる',
+	'check to enable support\n for first-class sprite':
+	'チェックを付けるとスプライトを\n第1級の対象として扱う機能が有効になる',
+
+	'Sprite Nesting':
+		'スプライトの入れ子構造',
+	'uncheck to disable\nsprite composition':
+		'チェックを外すとスプライトの\n合成機能が無効になる',
+	'check to enable\nsprite composition':
+		'チェックを付けるとスプライトの\n合成機能が有効になる',
+	'uncheck to allow\nscript reentrance':
+		'チェックを外すとスクリプトの\nリエントランスを許す',
+	'check to disallow\nscript reentrance':
+		'チェックと付けるとスクリプトの\nリエントランスを不許可にする',
+	'Persist linked sublist IDs':
+		'連結サブリストのIDの保持',
+	'check to enable\nsaving linked sublist identities':
+		'チェックを付けると連結サブリストの\nIDを保存する機能が有効になる',
+	'uncheck to disable\nsaving linked sublist identities':
+		'チェックを外すと連結サブリストの\nIDを保存する機能が無効になる',
+	'Project URLs':
+	'プロジェクトURL',
+		'check to enable\nproject data in URLs':
+	'チェックを付けるとURL中にあるプロジェクトデータが利用可能になる',
+	'uncheck to disable\nproject data in URLs':
+		'チェックを外すとURL中にあるプロジェクトデータは利用不可になる',
+	'Live coding support':
+		'ライブコーディング機能',
+	'EXPERIMENTAL! check to enable\n live custom control structures':
+		'実験的実装! チェックを付けると\nカスタムな制御構造の実行が可能になる',
+	'EXPERIMENTAL! uncheck to disable live\ncustom control structures':
+		'実験的実装! チェックを外すと\nカスタムな制御構造の実行はできなくなる',
+	
+
+	// scripting area
+	'scripts pic...':
+		'スクリプトの画像...',
+	'open a new window\nwith a picture of all scripts':
+		'すべてのスクリプトの画像を\n新しいウインドウで開く',
+
+	// palette:
+	'find blocks...':
+		'ブロックを探す...',
+	'hide primitives':
+		'原始ブロックを隠す',
+	'show primitives':
+		'原始ブロックを表示',
+
+
+		
+	// control
+
+    'when I am %interaction':
+        '自分 %interaction とき',
+    'clicked':
+        'がクリックされた',
+    'pressed':
+        'が押された',
+    'dropped':
+        'がドロップされた',
+    'mouse-entered':
+        'にマウスが入った',
+    'mouse-departed':
+        'からマウスが出た',
+    'when %b':
+        '%b のとき',
+    'any key':
+        'キーのどれか',
+
+	'message':
+		'メッセージ',
+	'stop %stopChoices':
+		'%stopChoices を止める',
+    'this script':
+        'このスクリプト',
+    'this block':
+        'このブロック',
+    'stop %stopOthersChoices':
+        '%stopOthersChoices を止める',
+    'all but this script':
+        'このスクリプトを除いてすべて',
+    'other scripts in sprite':
+        'このスクリプトの他のスクリプトを',
+    'pause all %pause':
+        'すべて一時停止する %pause',
+
+	// pen
+	'fill':
+        '塗りつぶす',
+
+	// attributes
+    'neighbors':
+        'の近くのスプライト',
+    'self':
+        '自身',
+    'other sprites':
+        '以外のスプライト',
+    'parts':
+        'のパーツ',
+    'anchor':
+        'のアンカー',
+    'parent':
+        'の親',
+    'children':
+        'の子',
+    'clones':
+        'のクローン',
+    'other clones':
+        'の他のクローン',
+    'dangling?':
+        'ダングリング?',
+    'rotation x':
+        'の回転中心の x 座標',
+    'rotation y':
+        'の回転中心の y 座標',
+    'center x':
+        'の中心の x 座標',
+    'center y':
+        'の中心の y 座標',
+    'name':
+        'の名前',
+    'stage':
+        'のステージ',
+
+	'split %s by %delim':
+	'%s を %delim で分割',
+
+	// delimiters
+	'letter':
+		'文字',
+	'whitespace':
+		'空白',
+	'line':
+		'行',
+	'tab':
+		'タブ',
+	'cr':
+		'キャリッジリターン',
+
+	//IDE Messages
+	'entering development mode.\n\nerror catching is turned off,\nuse the browser\'s web console\nto see error messages.':
+	'開発者モードに入ります．\nエラー取得機能は無効になります．\nエラーメッセージの取得は\nブラウザのコンソールを使用してください．',
+	'entering user mode':
+	'ユーザモードに戻ります',
+
+	//others
+	
+	'1997 or before':
+	'1997年以前',
+	
+	'Cloud':
+	'クラウド',
+	'Browser':
+	'ブラウザー',
+	'Examples':
+	'プロジェクト例',
+	'You are not logged in':
+	'ログインしていません',
+	'Opening project...':
+	'プロジェクトを開いています...',
+	'Fetching project\nfrom the cloud...':
+	'クラウドからプロジェクトを取得しています...',
+	'Saving project\nto the cloud...':
+	'プロジェクトをクラウドに保存しています...',
+	'Updating\nproject list...':
+	'プロジェクトリストを更新しています...',
+	
+	'Old password:':
+	'元のパスワード:',
+	'New password:':
+	'新しいパスワード:',
+	'Repeat new password:':
+	'新しいパスワードをもう一度:',
+	'E-mail address of parent or guardian:':
+	'親または保護者の電子メールアドレス:',
+	
+	'please fill out\nthis field':
+	'この項目を\n入力してください:',
+	'User name must be four\ncharacters or longer':
+	'ユーザ名は4文字以上に\nしてください',
+	'please provide a valid\nemail address':
+	'正しいメールアドレスを\n入力してください',
+	'password must be six\ncharacters or longer':
+	'パスワードは6文字以上にしてください',
+	'passwords do\nnot match':
+	'パスワードが違います',
+	'please agree to\nthe TOS':
+	'サービス利用規約に\n同意してください',
+	
+	//Paint Editor
+	'Paint Editor':
+	'ペイントエディター',
+	'undo':
+	'戻す',
+	'Paintbrush tool\n(free draw)':
+	'絵筆\n(自由描画)',
+	'Line tool\n(shift: vertical/horizontal)':
+	'線ツール\n(シフトキー: 垂直線/水平線)',
+	'Stroked Rectangle\n(shift: square)':
+	'長方形（輪郭）\n(シフトキー: 正方形)',
+	'Filled Rectangle\n(shift: square)':
+	'長方形\n(シフトキー: 正方形)',
+	'Stroked Ellipse\n(shift: circle)':
+	'楕円（輪郭）\n(シフトキー: 円周)',
+	'Filled Ellipse\n(shift: circle)':
+	'楕円\n(シフトキー: 円)',
+	'Eraser tool':
+	'消しゴム',
+	'Fill a region':
+	'塗りつぶし',
+	'Set the rotation center':
+	'回転中心を設定',
+	'Pipette tool\n(pick a color anywhere)':
+	'スポイト\n(好きな場所の色を選ぶ)',
+	'grow':
+	'大きく',
+	'shrink':
+	'小さく',
+	'flip ↔':
+	'反転 ↔',
+	'flip ↕':
+	'反転 ↕',
+	'Brush size':
+	'絵筆の太さ',
+	'Constrain proportions of shapes?\n(you can also hold shift)':
+	'図形の縦横比を保持しますか?\n(シフトキーを押してもできます)',
+	
+	//Import
+	'Import':
+	'読み込む',
+	'Import library':
+	'ライブラリーを読み込む',
+
+	
+	//sprite
+	'pen':
+	'ペンの位置',
+	'tip':
+	'先',
+	'middle':
+	'中央',
+	
+	//stage
+	'move':
+	'移動',
+	'turn pen trails into new costume...':
+	'ペンの軌跡を新しい\nコスチュームにする',
+	'turn all pen trails and stamps\ninto a new costume for the\ncurrently selected sprite':
+	'すべてのペンの軌跡とスタンプを\n現在選択されているスプライトの\n新しいコスチュームにする',
+
+	'saved.':
+	'保存しました',
+	'options...':
+	'オプション...',
+	'read-only':
+	'読み込み専用',
+	'Input Slot Options':
+	'入力スロットのオプション',
+
+	//上書きするもの
+	'letter %n of %s':
+	'%n 文字目の文字 ( %s の)',
+
+	'item %idx of %l':
+		'%idx 番目 ( %l の)',
+	'insert %s at %idx of %l':
+		'%s を %idx 番目 ( %l の) に挿入する',
+	'replace item %idx of %l with %s':
+		'%idx 番目 ( %l の) を %s で置き換える',
+	'Birth date:':
+	'誕生月:',
+
+    //Arduino
+    'Connect Arduino':
+        'Arduinoと接続する',
+    'Disconnect Arduino':
+        'Arduinoと切断する',
+    'arduino connected?':
+        'Arduinoと接続されているか?',
+    'connect arduino at %n':
+        '%n でArduinoと接続する',
+    'disconnect arduino':
+        'Arduinoと切断する',
+    'set servo %i to %j':
+        'サーボ %i ピンを %j にする',
+    'set digital pin %i to %j':
+        'デジタル %i ピンを %j にする',
+    'set pin %i to value %j':
+        'PWM %i ピンを %j にする',
+    'analog reading %i':
+        '%i ピンのアナログ値を読む',
+    'digital reading %i':
+        '%i ピンのデジタル値を読む',
 
 };
